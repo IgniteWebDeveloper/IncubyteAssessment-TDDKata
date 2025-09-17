@@ -1,4 +1,4 @@
-function stringCalculatorTdd(numbers) {
+function add(numbers) {
     if (numbers === "") return 0;
 
     if (!numbers.includes(',')) {
@@ -11,4 +11,4 @@ function stringCalculatorTdd(numbers) {
 
 }
 
-module.exports = { stringCalculatorTdd };
+module.exports = { add };
