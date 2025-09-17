@@ -1,4 +1,4 @@
-const { add } = require("./add");
+const { add } = require("./stringCalculatorTdd");
 
 test("returns 0 for empty string", () => {
     expect(add("")).toBe(0);
@@ -6,6 +6,6 @@ test("returns 0 for empty string", () => {
 
 
 test("returns sum of the numbers in the string", () => {
-    expect(add("1,5")).toBe(6);
+    expect(add("1,2,3,4,5")).toBe(15);
 });
 
