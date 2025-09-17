@@ -6,7 +6,7 @@ function add(numbers) {
         if (!Number.isNaN(number)) return number;
     }
 
-    const numbersSum = numbers.split(",").map(Number)
+    const numbersSum = numbers.split(/[\n,]/).map(Number)
     return numbersSum.reduce((acc, curr) => acc + curr, 0);
 
 }
