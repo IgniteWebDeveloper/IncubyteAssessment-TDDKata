@@ -28,6 +28,12 @@ function add(numbers) {
         .filter(number => number !== "" && number !== undefined)
         .map(number => Number(number));
 
+
+    const negativeNumbers = filteredNumbers.filter(number => number < 0);
+    if (negativeNumbers.length > 0) {
+        throw new Error(`negative numbers not allowed: ${negativeNumbers.join(",")}`);
+    }
+
     return filteredNumbers.reduce((acc, curr) => acc + curr, 0);
 
 }
