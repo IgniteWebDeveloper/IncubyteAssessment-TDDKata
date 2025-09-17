@@ -18,4 +18,9 @@ test("supports custom single char delimiter", () => {
 });
 
 
+test("throws back on single negative numbers", () => {
+    expect(add("1,2,-3,-5")).toBe("negative numbers not allowed: -3,-5");
+});
+
+
 
