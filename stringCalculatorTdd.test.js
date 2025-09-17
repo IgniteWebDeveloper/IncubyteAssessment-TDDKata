@@ -1,5 +1,5 @@
-const { add } = require("./stringCalculatorTdd");
+const { stringCalculatorTdd } = require("./stringCalculatorTdd");
 
 test("returns 0 for empty string", () => {
-    expect(add("")).toBe(0);
+    expect(stringCalculatorTdd("")).toBe(0);
 });

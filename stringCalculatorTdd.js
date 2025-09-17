@@ -1,6 +1,6 @@
-function add(numbers) {
+function stringCalculatorTdd(numbers) {
     if (numbers === "") return 0;
-    return 0;
+    throw new Error("Not implemented yet");
 }
 
-module.exports = { add };
+module.exports = { stringCalculatorTdd };
